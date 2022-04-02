@@ -1,0 +1,40 @@
+@mixin header-spacing {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header {
+  @include header-spacing();
+
+  justify-content: space-between;
+  min-height: min-content;
+
+  &-section {
+    @include header-spacing();
+
+    &:last-child {
+      text-align: right;
+    }
+  }
+
+  &-logo {
+    width: 100%;
+    height: auto;
+    min-width: 2rem;
+    max-width: 4rem;
+  }
+
+  &-title {
+    font-style: italic;
+    font-weight: bold;
+    color: currentColor;
+    text-decoration: none;
+    word-wrap: none;
+    min-width: max-content;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

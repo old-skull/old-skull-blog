@@ -1,0 +1,97 @@
+@import '../../utils/vars';
+
+$color-green: #6dab50;
+$color-red: #b9373e;
+$color-gray: #cccdcd;
+$color-darkgray: #abb2c1;
+$color-oceangreen: #61b6aa;
+$color-blue: #5aa1b8;
+$color-orange: #de8034;
+
+@font-face {
+  font-family: 'PrismTreeviewCustom';
+  /**
+	 * - \ea01 1-dir
+	 * - \ea02 2-file
+	 * - \ea03 3-git
+	 * - \ea04 4-json
+	 * - \ea05 5-markdown
+	 * - \ea06 6-typescript
+	 * - \ea07 7-yml
+	 * - \ea08 8-npm
+	 */
+  src: url('data:application/font-woff;base64,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')
+    format('woff');
+}
+
+span[class*='ext-']:before {
+  color: $color-gray;
+}
+
+.token.treeview-part .entry-name {
+  color: $color-darkgray;
+
+  &:before {
+    content: '\ea02';
+    font-family: 'PrismTreeviewCustom';
+    font-size: 1.8rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 0;
+    display: inline-block;
+    vertical-align: middle;
+    width: 2.5ex;
+    max-width: max-content;
+  }
+
+  &.dotfile {
+    opacity: 1;
+
+    &:before {
+      color: $color-gray;
+    }
+  }
+
+  &.dir:before {
+    content: '\ea01';
+    color: $color-gray;
+    transform: scale(0.6);
+  }
+
+  &.ext-gitignore:before {
+    content: '\ea03';
+    color: $color-red;
+  }
+
+  &.ext-json:before {
+    content: '\ea04';
+  }
+
+  &.ext-md:before {
+    content: '\ea05';
+    color: $color-blue;
+  }
+
+  &.ext-ts:before {
+    content: '\ea06';
+    color: $color-blue;
+  }
+
+  &.ext-yaml:before,
+  &.ext-yml:before {
+    content: '\ea07';
+    color: $color-red;
+  }
+
+  &.ext-npmrc::before {
+    content: '\ea08';
+    color: $color-red;
+  }
+}
+
+// move line-highlight number to the right side
+.line-highlight:before,
+.line-highlight[data-end]:after {
+  right: 0.6em;
+  left: auto;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "old-skull-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "rimraf build",
+    "build": "pnpm prebuild && pnpx @11ty/eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "eleventy-plugin-code-style-hooks": "^2.0.2",
+    "eleventy-sass": "^1.1.5",
+    "rimraf": "^3.0.2"
+  }
+}
