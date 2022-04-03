@@ -37,4 +37,14 @@
       text-decoration: underline;
     }
   }
+
+  &-theme-toggle {
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+
+    &:hover img {
+      transform: scale(1.2);
+    }
+  }
 }

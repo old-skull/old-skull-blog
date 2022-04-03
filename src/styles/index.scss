@@ -1,8 +1,6 @@
-@import '_normalize';
-@import 'prism/prism';
-@import 'utils/vars';
-@import 'layout';
-@import 'header';
+@use '_normalize';
+@use 'prism';
+@use 'includes';
 
 * {
   margin: 0;
@@ -14,10 +12,6 @@
 html,
 body {
   height: 100%;
-}
-
-html {
-  background-color: #ffffff;
 }
 
 body {
@@ -57,14 +51,3 @@ pre {
   overflow: auto;
   width: 100%;
 }
-
-// @media (prefers-color-scheme: dark) {
-//   html {
-//     background-color: #181a1b;
-//     color: #e8e6e3;
-//   }
-
-//   a {
-//     color: #3391ff;
-//   }
-// }
