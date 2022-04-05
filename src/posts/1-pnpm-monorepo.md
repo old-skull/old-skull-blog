@@ -18,7 +18,7 @@ pnpm init
 
 After you add basic files like .gitignore, README.md you should create a **packages** folder. Every folder inside **packages** is an npm package with its configuration. Feel free to add as many packages as you want.
 
-<pre data-line="6"><code class="language-treeview">./
+<pre><code class="language-treeview">./
 ├── .gitignore
 ├── LICENSE
 ├── README.md
@@ -55,7 +55,7 @@ Let's see why we need these options.
 
 ## Review
 
-<pre data-line="3,7,11"><code class="language-treeview">./
+<pre><code class="language-treeview">./
 ├── .gitignore
 ├── .npmrc
 ├── LICENSE
