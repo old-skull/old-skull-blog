@@ -16,6 +16,7 @@ module.exports = function (eleventyConfig) {
     sass: {
       loadPaths: 'src/styles',
       sourceMap: false,
+      style: 'compressed',
     },
   });
 
