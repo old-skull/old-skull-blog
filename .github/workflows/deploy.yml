@@ -2,7 +2,7 @@ name: Deploy
 on: [push]
 
 jobs:
-  build_test:
+  deploy:
     runs-on: ubuntu-latest
 
     strategy:
