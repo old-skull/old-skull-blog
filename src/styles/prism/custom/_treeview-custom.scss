@@ -14,7 +14,7 @@ $font-name: 'seti-icons';
   src: url('/fonts/seti-icons.eot') format('embedded-opentype'),
     url('/fonts/seti-icons.ttf') format('truetype'), url('/fonts/seti-icons.woff') format('woff'),
     url('/fonts/seti-icons.woff2') format('woff2');
-  font-display: swap;
+  font-display: block;
 }
 
 span[class*='ext-']:before {
