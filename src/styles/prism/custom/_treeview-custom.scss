@@ -1,104 +1,10 @@
-$color-green: #6dab50;
-$color-red: #b9373e;
-$color-gray: #cccdcd;
-$color-darkgray: #abb2c1;
-$color-oceangreen: #61b6aa;
-$color-blue: #5aa1b8;
-$color-orange: #de8034;
-$color-yellow: #f4be75;
-
-$font-name: 'seti-icons';
-
-@font-face {
-  font-family: $font-name;
-  src: url('/fonts/seti-icons.eot') format('embedded-opentype'),
-    url('/fonts/seti-icons.ttf') format('truetype'), url('/fonts/seti-icons.woff') format('woff'),
-    url('/fonts/seti-icons.woff2') format('woff2');
-  font-display: block;
-}
-
-span[class*='ext-']:before {
-  color: $color-gray;
-}
-
 .token.treeview-part .entry-name {
-  color: $color-darkgray;
-
+  margin-left: 0.3rem;
   &:before {
-    content: '\f15f';
-    font-family: $font-name;
-    font-size: 1.8rem;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     line-height: 0;
-    display: inline-block;
-    vertical-align: middle;
-    width: 2.5ex;
-    max-width: max-content;
-    margin-right: 0.5rem;
   }
 
   &.dotfile {
     opacity: 1;
-
-    &:before {
-      color: $color-gray;
-    }
-  }
-
-  &.dir:before {
-    content: '\f12f';
-    color: $color-gray;
-    transform: scale(0.6);
-  }
-
-  &.ext-gitignore:before {
-    content: '\f132';
-    color: $color-red;
-  }
-
-  &.ext-json:before {
-    content: '\f150';
-  }
-
-  &.ext-md:before {
-    content: '\f15b';
-    color: $color-blue;
-  }
-
-  &.ext-js:before {
-    content: '\f14c';
-    color: $color-yellow;
-  }
-
-  &.ext-jsx:before {
-    content: '\f177';
-    color: $color-yellow;
-  }
-
-  &.ext-ts:before {
-    content: '\f191';
-    color: $color-blue;
-  }
-
-  &.ext-tsx:before {
-    content: '\f177';
-    color: $color-blue;
-  }
-
-  &.ext-html:before {
-    content: '\f144';
-    color: $color-orange;
-  }
-
-  &.ext-yaml:before,
-  &.ext-yml:before {
-    content: '\f19e';
-    color: $color-red;
-  }
-
-  &.ext-npmrc::before {
-    content: '\f163';
-    color: $color-red;
   }
 }

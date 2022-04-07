@@ -5,7 +5,6 @@ const prism = require('./prism');
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('css');
   eleventyConfig.addPassthroughCopy('src/img');
-  eleventyConfig.addPassthroughCopy('src/fonts');
   eleventyConfig.addPassthroughCopy('src/favicon.ico');
 
   eleventyConfig.addPlugin(codeStyleHooks, {
